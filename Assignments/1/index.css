@@ -6,6 +6,10 @@ tr {
   margin-left: auto;
 }
 
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
 td {
   width: 200px;
 }
@@ -23,4 +27,10 @@ a:hover {
 .changeWord {
   color: red;
   font-weight: bold;
+}
+
+.titleText {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: large;
 }
