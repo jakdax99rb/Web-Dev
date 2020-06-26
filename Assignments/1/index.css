@@ -1,0 +1,26 @@
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  margin-left: auto;
+}
+
+td {
+  width: 200px;
+}
+
+img {
+  float: right;
+}
+.tab {
+  float: right;
+}
+a:hover {
+  background-color: yellow;
+}
+
+.changeWord {
+  color: red;
+  font-weight: bold;
+}
