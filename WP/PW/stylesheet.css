@@ -1,0 +1,23 @@
+.postTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.postAuthor {
+  font-size: 15px;
+}
+.post {
+  background-color: rgb(77, 77, 77);
+}
+
+body {
+  color: rgba(255, 255, 255, 0.842);
+  background-color: #121212;
+}
+
+a:link {
+  color: aqua;
+}
+
+a:visited {
+  color: rgb(39, 107, 90);
+}

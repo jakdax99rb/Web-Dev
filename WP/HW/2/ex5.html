@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex5</title>
+    <script>
+      function table() {
+        var students = [
+          { name: "Andy", id: 001, major: "Computer Science" },
+          { name: "Ben", id: 002, major: "Biology" },
+          { name: "Hari", id: 003, major: "Computer Science" },
+          { name: "Lisa", id: 004, major: "Physic" },
+          { name: "Wendy", id: 005, major: "Math" },
+        ];
+
+        result = "<table><tr><th>ID</th><th>Name</th><th>Major</th></tr>";
+
+        students.forEach((student) => {
+          result +=
+            "<tr>" +
+            "<td>" +
+            student["id"] +
+            "</td>" +
+            "<td>" +
+            student["name"] +
+            "</td>" +
+            "<td>" +
+            student["major"] +
+            "</td>" +
+            "</tr>";
+        });
+
+        result += "</table>";
+        document.getElementById("container").innerHTML = result;
+      }
+      window.onload = table;
+    </script>
+    <style>
+      html,
+      body {
+        font-family: arial;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table tr td {
+        border: 1px solid #000;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+  </body>
+</html>

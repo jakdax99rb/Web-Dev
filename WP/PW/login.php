@@ -8,6 +8,7 @@
     <title>Login</title>
     <a href="index.php">Frontpage</a>
     <meta charset="UTF-8" />
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
   </head>
   <body>
     <form action="login.php" method="POST">
@@ -25,13 +26,12 @@
         if (! empty( $_POST )) {
             if ( isset($_POST['username']) && isset($_POST['password'] ) ){
         
-                $db_host = 'localhost';
-                $db_user = 'root';
-                $db_pass = '';
-                $db_name = 'forum';    
-                $table='users';
+                $db_host = 'mydb.ceyhk5htyork.us-east-2.rds.amazonaws.com';
+                $db_user = 'admin';
+                $db_pass = '7pMCCB57xwEe';
+                $db_name = 'forum';        
 
-                $con = new mysqli($db_host, $db_user, $db_pass, $db_name,"3308");
+                $con = new mysqli($db_host, $db_user, $db_pass, $db_name,"3306");
                 $stmt = $con->prepare("SELECT * FROM users WHERE username = ?");
                 $stmt->bind_param('s', $_POST['username']);
                 $stmt->execute();

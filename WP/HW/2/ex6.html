@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex6</title>
+    <script>
+      function login() {
+        var username = ["user1", "user2", "user3"];
+        var password = ["user1-111", "user2-222", "user3-333"];
+
+        var name = username.indexOf(document.getElementById("user").value);
+        var pass = password.indexOf(document.getElementById("pass").value);
+
+        if (name > -1) {
+          if (pass > -1 && pass == name) {
+            alert("Successful");
+          } else {
+            alert("Incorrect Password");
+          }
+        } else {
+          alert("The username does not exist.");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <label>Username </label>
+      <input type="text" id="user" name="user" /><br />
+      <label>Password </label>
+      <input type="text" id="pass" name="user" />
+    </form>
+
+    <button onclick="login()">Login</button>
+  </body>
+</html>

@@ -12,6 +12,7 @@
     <title>New Post</title>
     <a href="index.php">Frontpage</a>
     <meta charset="UTF-8" />
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
   </head>
   <body>
     <form action="newPost.php" method="POST">
@@ -27,12 +28,12 @@
     <?php  
         if ( isset( $_SESSION['user_name'] ) ) {
         
-            $db_host = 'localhost';
-            $db_user = 'root';
-            $db_pass = '';
-            $db_name = 'forum';    
+            $db_host = 'mydb.ceyhk5htyork.us-east-2.rds.amazonaws.com';
+            $db_user = 'admin';
+            $db_pass = '7pMCCB57xwEe';
+            $db_name = 'forum';        
     
-            $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name,"3308");
+            $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name,"3306");
             
             if ($mysqli -> connect_errno){
                 echo "Connection to database failed" . $mysqli -> connect_error;

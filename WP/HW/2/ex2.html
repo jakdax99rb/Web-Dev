@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex2</title>
+    <script>
+      function add() {
+        document.getElementById("result").innerHTML =
+          Number(document.getElementById("num1").value) +
+          Number(document.getElementById("num2").value);
+      }
+      function subtract() {
+        document.getElementById("result").innerHTML =
+          Number(document.getElementById("num1").value) -
+          Number(document.getElementById("num2").value);
+      }
+      function mult() {
+        document.getElementById("result").innerHTML =
+          Number(document.getElementById("num1").value) *
+          Number(document.getElementById("num2").value);
+      }
+      function divide() {
+        document.getElementById("result").innerHTML =
+          Number(document.getElementById("num1").value) /
+          Number(document.getElementById("num2").value);
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <label>Num 1 </label>
+      <input type="text" id="num1" name="num1" /><br />
+      <label>Num 2 </label>
+      <input type="text" id="num2" name="num2" />
+    </form>
+
+    Result: <span id="result"></span>
+
+    <button onclick="add()">add</button>
+    <button onclick="subtract()">subtract</button>
+    <button onclick="mult()">mult</button>
+    <button onclick="divide()">divide</button>
+  </body>
+</html>

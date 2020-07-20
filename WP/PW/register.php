@@ -3,12 +3,12 @@
     $regiusername = $_POST['username'];
     $regipassword = $_POST['password'];
     
-    $serverName = 'localhost';
-    $username = 'root';
-    $password = '';
-    $myDB = 'forum';
+    $db_host = 'mydb.ceyhk5htyork.us-east-2.rds.amazonaws.com';
+    $db_user = 'admin';
+    $db_pass = '7pMCCB57xwEe';
+    $db_name = 'forum';    
 
-    $link = mysqli_connect($serverName, $username, $password, $myDB,"3308");
+    $link = mysqli_connect($db_host, $db_user, $db_pass, $db_name,"3306");
 
     if(!$link){
         die('Connection failed: '.$link->connect_error);

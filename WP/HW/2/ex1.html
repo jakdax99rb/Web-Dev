@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex1</title>
+    <h1>Say Hello to yourself</h1>
+    <script>
+      function putName() {
+        window.alert("Hello, " + document.getElementById("name").value);
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <label>Your name </label>
+      <input type="text" id="name" name="name" />
+    </form>
+    <button onclick="putName()">Click me!</button>
+  </body>
+</html>

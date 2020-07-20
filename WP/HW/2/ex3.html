@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex3</title>
+    <script>
+      function keeb(letter) {
+        document.getElementById("result").innerHTML =
+          document.getElementById("result").innerHTML + letter;
+      }
+    </script>
+  </head>
+
+  <body>
+    <button onclick="keeb('A')">A</button>
+    <button onclick="keeb('B')">B</button>
+    <button onclick="keeb('C')">C</button>
+    <button onclick="keeb('D')">D</button>
+    <button onclick="keeb('E')">E</button>
+    <button onclick="keeb('F')">F</button>
+    <button onclick="keeb('G')">G</button>
+    <button onclick="keeb('H')">H</button>
+    <button onclick="keeb(' ')">space</button>
+    <span id="result"></span>
+  </body>
+</html>

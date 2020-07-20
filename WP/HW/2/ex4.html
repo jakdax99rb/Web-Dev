@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex4</title>
+    <script>
+      function checklist() {
+        const chs = document.querySelectorAll("input[name='ch']:checked");
+        let list = [];
+
+        chs.forEach((checkbox) => {
+          list.push(checkbox.value);
+        });
+
+        window.alert(list + " are in your cart");
+      }
+    </script>
+  </head>
+
+  <body>
+    Click which items you want to buy.
+    <form>
+      <label for="ch1">Milk</label>
+      <input type="checkbox" id="ch1" name="ch" value="Milk" /><br />
+      <label for="ch2">Bread</label>
+      <input type="checkbox" id="ch2" name="ch" value="Bread" /><br />
+      <label for="ch3">Soda</label>
+      <input type="checkbox" id="ch3" name="ch" value="Soda" /><br />
+      <label for="ch4">Eggs</label>
+      <input type="checkbox" id="ch4" name="ch" value="Eggs" /><br />
+      <label for="ch5">Pasta</label>
+      <input type="checkbox" id="ch5" name="ch" value="Pasta" />
+    </form>
+    <button onclick="checklist()">Checkout</button>
+  </body>
+</html>
