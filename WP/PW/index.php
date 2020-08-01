@@ -18,7 +18,7 @@
         if (mysqli_query($mysqli, $sqlUpdate)){
             $response = "Commented successfully!";
         } else{
-            $response = "Comment unsuccessful, error: ".mysqli_error($link);
+            $response = "Comment unsuccessful, error: ".mysqli_error($mysqli);
         }
     }
 ?>
